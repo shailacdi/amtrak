@@ -220,7 +220,7 @@ class AmtrakSeleniumMonitor:
             train_elements = wait.until(
                 EC.presence_of_all_elements_located((By.CLASS_NAME, "train-result"))
             )
-            
+            print(f"### TRAINS #### {}", train_elements)
             for train_elem in train_elements:
                 try:
                     # Extract train details

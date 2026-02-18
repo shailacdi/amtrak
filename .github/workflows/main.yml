@@ -32,7 +32,7 @@ jobs:
           TWILIO_PHONE_NUMBER: ${{ secrets.TWILIO_PHONE_NUMBER }}
           YOUR_PHONE_NUMBER: ${{ secrets.YOUR_PHONE_NUMBER }}
         run: |
-          python amtrak_price_monitor.py --report
+          python amtrak_monitor_selenium.py --report
       
       - name: Upload logs
         if: always()
